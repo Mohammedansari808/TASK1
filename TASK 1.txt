@@ -1,0 +1,85 @@
+DIFFERENCE BETWEEN HTTP1.1 AND HTTP2
+
+      HTTP1.1                                            
+1. In http server 1.1 we should request each and everything we need
+    and then the server will respond .so, this will take time .   
+2. In http server 1.1 receiving and sending the messages transfer in the 
+    text format . so that hacker can easily attack  .
+3. In http server 1.1 instead of showing full image it will show part by part
+    so that the loading of image will slow .
+4. In http server 1.1 multiplexing is not used so that its multiple request
+    cannot be shoved into a channel
+    HTTP 2
+1. In http server 2  we dont have to wait for the request, the server itself 
+    pushes the request which gives slight faster to the Browser. so the server 
+    knows what we need.
+2. In http server 2 receiving and sending the messages transfer in the 
+    binary protocol format so that hacker cant attack .
+3. In http server 2 images will shown in low latency . 
+4. In http server 2 multiplexing is used in which multiple requests come and
+    gets shoved into one channel
+
+2.) ABOUT OBJECTS AND ITS INTERNAL REPRESENTATION:
+    An object in a javascript is a collection of property .
+    it has properties as state and methods as behavior 
+    It is associated with key and value.
+    For example:
+        let person ={
+                     name: "xxx"
+                    }
+         here key is NAME and value is XXX which is a string.
+
+     We can create and modify the object using the following methods:
+
+1.  OBJECT LITERAL
+     let person ={
+                     name: "xxx",
+                     place: 26,
+                    }
+    its value are separated by a colon (:) and the properties are separated by comma (,). 
+    The properties can be accessed using the dot (.) operator.
+
+2. CREATING OBJECT DIRECTLY (USING NEW KEYWORD)
+    let objectname=new Object();
+    new key word is used to create new object
+
+3. OBJECT CONSTRUCTOR 
+    function car(name,color)
+   {
+    this.name=name;
+    this.color=color;
+    }
+    let car1=new car("Fiat","Red");
+    console.log(car1);//{ name: 'Fiat', color: 'red' }
+   
+    In this method new creates a empty object and the this containing commands gets 
+    into the new object , so that the name and color value gets passed inside the object
+
+4.ACCESING OBJECT VALUES
+   to acccess the object values . dot notation and [] square brackets are used .
+   Ex:
+       let car={name:"Ansari"};
+       console.log(car.name);
+       //Ansari
+      console.log(car["name"]);
+      //Ansari
+
+5.MODIFYING OBJECT
+   We can alsouse the dot (.) notation and bracket ([]) to modify any value 
+   let car1={name:"Renault",color:"red"};
+   let car2={name:"Fiat",color:"blue"};
+   car1.color="brownish red";
+   car2["color"]="metallic blue";
+
+   so that car1 and car2 gets modified and gives the output as brownish red and metallic blue.
+
+6.DELETING OBJECT
+
+   By using delete keyword to delete properties in the object.
+   Ex:
+      let car1={name:"Renault",color:"red"};
+      delete car1.color
+      console.lo(car1);
+   // {name:"Renault"}
+
+
